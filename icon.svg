@@ -1,0 +1,25 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pysticker Icon: Origami Snake Post-it -->
+    <!-- Concept by Gemini & Augusto -->
+    
+    <!-- Shadow for depth -->
+    <path d="M 22 15 L 87 15 L 87 80 L 22 80 Z" fill="#4C2F7C" transform="rotate(5 50 50)"/>
+    
+    <!-- Main post-it body -->
+    <path d="M 20 12 L 85 12 L 85 77 L 20 77 Z" fill="#663399" transform="rotate(5 50 50)"/>
+    
+    <!-- Origami Folds (highlights to create shape) -->
+    
+    <!-- Top head fold -->
+    <path d="M 20 12 L 52.5 45 L 85 12 Z" fill="#7E4FB2" transform="rotate(5 50 50)"/>
+    
+    <!-- Left side fold -->
+    <path d="M 20 12 L 20 77 L 35 62 L 52.5 45 Z" fill="#7E4FB2" opacity="0.6" transform="rotate(5 50 50)"/>
+
+    <!-- Right side fold -->
+     <path d="M 85 12 L 85 77 L 70 62 L 52.5 45 Z" fill="#7E4FB2" opacity="0.6" transform="rotate(5 50 50)"/>
+
+    <!-- Eyes -->
+    <circle cx="45" cy="32" r="2.5" fill="white" transform="rotate(5 50 50)"/>
+    <circle cx="60" cy="32" r="2.5" fill="white" transform="rotate(5 50 50)"/>
+</svg> 

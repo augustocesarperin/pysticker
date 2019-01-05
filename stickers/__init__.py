@@ -1,0 +1,1 @@
+# This file makes the 'stickers' directory a Python package. 
