@@ -17,6 +17,7 @@ class App:
         self.root = root
         self.root.attributes("-topmost", True)
         
+        # Centraliza a janela principal na tela
         self.root.withdraw()
         self.root.update_idletasks()
         width = self.root.winfo_reqwidth()
@@ -124,8 +125,7 @@ class App:
         
         tk.Label(about_win, text="Pysticker", font=("Arial", 14, "bold")).pack(pady=(10,5))
         tk.Label(about_win, text="Versão 1.0", font=("Arial", 9)).pack()
-        tk.Label(about_win, text="\nCriado por Augusto Cesar Perin, 2018", font=("Arial", 10)).pack(pady=5)
-        
+        tk.Label(about_win, text="\nCriado por Augusto Cesar Perin, 2018", font=("Arial", 10)).pack(pady=5)      
         tk.Button(about_win, text="OK", command=about_win.destroy, width=10).pack(pady=10)
         
         self.root.wait_window(about_win)

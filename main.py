@@ -13,10 +13,10 @@ def main():
     root.title("Pysticker")
 
     try:
-        icon = tk.PhotoImage(file='icon.png')
+        icon = tk.PhotoImage(file='assets/icon.png')
         root.iconphoto(True, icon)
     except tk.TclError:
-        print("Could not load 'icon.png'. The file might be missing or not a valid PNG.")
+        print("Could not load 'assets/icon.png'.")
 
     app = App(root)
     root.mainloop()
