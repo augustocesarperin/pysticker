@@ -16,6 +16,7 @@ class App:
     def __init__(self, root):
         self.root = root
         self.root.attributes("-topmost", True)
+        self.root.config(bg="black") # Fundo preto
         
         # Centraliza a janela principal na tela
         self.root.withdraw()
@@ -32,19 +33,21 @@ class App:
         self.notes = {}
         self.save_file = "stickers_data.json"
         
-        tk.Label(self.root, text="Pysticker", font=("Arial", 16, "bold")).pack(pady=(10, 10))
+        # Garante que o título e o frame dos botões também tenham fundo preto
+        tk.Label(self.root, text="Pysticker", font=("Arial", 16, "bold"), 
+                 bg="black", fg="white").pack(pady=(10, 10))
         
-        btn_frame = tk.Frame(self.root)
+        btn_frame = tk.Frame(self.root, bg="black")
         btn_frame.pack(pady=10)
         
         tk.Button(btn_frame, text="➕ Novo Sticker", command=self.create_note,
-                 bg="#663399", fg="white", font=("Arial", 12), padx=20, pady=5).pack(side=tk.LEFT, padx=5)
+                 bg="#673AB7", fg="white", font=("Arial", 12), padx=20, pady=5).pack(side=tk.LEFT, padx=5)
         
         tk.Button(btn_frame, text="💀 Kill 'Em All", command=self.clear_all,
                  bg="#F44336", fg="white", font=("Arial", 12), padx=20, pady=5).pack(side=tk.LEFT, padx=5)
         
         tk.Button(btn_frame, text="?", command=self.show_about_window,
-                 bg="gray", fg="white", font=("Arial", 12, "bold"), width=3).pack(side=tk.LEFT, padx=5)
+                 bg="#673AB7", fg="white", font=("Arial", 12, "bold"), width=3).pack(side=tk.LEFT, padx=5)
         
         self.load_notes()
         

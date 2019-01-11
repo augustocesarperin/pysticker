@@ -1,19 +1,21 @@
 # Pysticker
 
-Um .py para espalhar stickers pela sua tela com todas aquelas ideias que você provavelmente não vai fazer (mas deveria).
+Programa simples para espalhar stickers pela sua tela com todas aquelas ideias que você provavelmente não vai fazer (mas deveria).
 
-![Interface do Pysticker](screen.png)
+<br>
 
+<p align="center">
+  <img src="screen.png" width="450" alt="Interface do Pysticker">
+</p>
 
 ---
 
 ### Principais Funcionalidades
 
-*   **Criação Simples:** Crie e delete notas com um clique.
-*   **Cores Personalizáveis:** Organize ideias com sistema de cores.
-*   **Persistência Automática:** Suas notas são salvas localmente e reaparecem quando o app é reiniciado.
-*   **Sempre à Vista:** As notas flutuam sobre as outras janelas para manter seus lembretes em foco.
-*   **Layout Flexível:** Mova e redimensione as notas como quiser.
+*   Criação Simples
+*   Cores Personalizáveis
+*   Persistência Automática
+
 
 ### Como Executar
 
@@ -31,7 +33,3 @@ Um .py para espalhar stickers pela sua tela com todas aquelas ideias que você p
     ```sh
     python main.py
     ```
-
-
-
-
